@@ -27,6 +27,7 @@ public class App {
 		Transaction tx = session.beginTransaction();
 
 		tx.commit();
+		session.close();
 	}
 
 	private static void namedQuery(Session session) {
